@@ -9,3 +9,9 @@
 
 >git pull
 - Loads changes pushed by other collaborators documents
+
+>git branch "branchName"
+- Creates a branch with the name specified in quotation marks
+
+>git checkout "branchName"
+- Switches the branch that you are working on to a different branch with the name specified in quotation marks
