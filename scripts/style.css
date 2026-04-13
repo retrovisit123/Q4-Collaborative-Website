@@ -10,5 +10,6 @@ body{
     font-style: italic;
     text-align: center;
     font-size: xx-large;
-    color: 223 233 203
+    color:#E0EAC9;
+    -webkit-text-stroke: 1px black
 }
