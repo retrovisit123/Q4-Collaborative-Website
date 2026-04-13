@@ -6,3 +6,9 @@ body{
 #logo{
     height: 70px;
 }
+#soil{
+    font-style: italic;
+    text-align: center;
+    font-size: xx-large;
+    color: 223 233 203
+}
