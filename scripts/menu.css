@@ -7,11 +7,24 @@
     text-decoration: none;
 }
 
+.footer {
+    background-color: #104249;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Needed for absolute positioning of the footer */
+}
 
 /* --- Navigation Container --- */
 .navbar-container {
     background-color: #104249;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container2 {
+    background-color: #104249;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
 }
 
 .navbar {
@@ -40,13 +53,27 @@
     align-items: center;
 }
 
+.nav-links2 {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center;
+}
+
 .nav-links > li {
     position: relative;
 }
 
+
 .nav-links a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px 25px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.nav-links2 a {
+    display: block;
+    padding:25px 100px;
     color: white;
     transition: background-color 0.3s;
 }
@@ -86,7 +113,7 @@
 }
 
 .hamburger {
-    display: none; 
+    display: none;
     cursor: pointer;
 }
 
