@@ -16,3 +16,57 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
 }
+#spike {
+    /* Positioning and Size */
+    max-width: 380px;
+    margin: 20px;
+
+    background-color: #2d5a27;
+    border-left: 6px solid #4CAF50;
+}
+#spike-explain {
+    /* Positioning and Size */
+    float: left;
+    max-width: 380px;
+    margin: 20px;
+    
+    /* Box Styling */
+    background-color: #ffffff;
+    border-left: 6px solid #4CAF50; /* A nice lawn-green accent */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    
+    /* Typography */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 400; /* Removes the default heavy H4 thickness */
+}
+
+#spike-explain h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2d5a27; /* Darker green for the sub-header */
+    font-size: 1.2rem;
+}
+
+#spike-explain ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+#spike-explain li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 600px) {
+    #spike-explain {
+        float: none;
+        max-width: 100%;
+        margin: 10px;
+    }
+}
