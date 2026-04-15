@@ -45,27 +45,17 @@
         </nav>
     </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Contact Us</h1>
-    <p>We’re here to help with your lawn care needs</p>
-  </section>
 
   <!-- Contact Section -->
   <section class="contact-container">
 
-    <!-- Info -->
-    <div class="contact-info">
-      <h2>Reach Us</h2>
-      <p><strong>Phone:</strong> (740) 815-8664</p>
-      <p><strong>Email:</strong> info@greenstarpros.com</p>
-      <p><strong>Location:</strong> Ohio</p>
-    </div>
-
     <!-- Form -->
     <div class="contact-form">
       <form onsubmit="handleSubmit(event)">
-
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>We’re here to help with your lawn care needs</p>
+        </section>
         <label>Name</label>
         <input type="text" required>
 
@@ -79,13 +69,15 @@
         <textarea rows="5"></textarea>
 
         <div class="checkbox">
-          <input type="checkbox" required>
-          <span>I agree to the terms & privacy policy</span>
+            <label>
+                <input type="checkbox" required>
+                I agree to the terms & privacy policy
+            </label>
         </div>
 
         <button type="submit">Send Message</button>
 
-      </form>
+    
 
       <p id="success-msg"></p>
     </div>
