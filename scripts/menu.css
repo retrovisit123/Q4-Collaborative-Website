@@ -73,7 +73,7 @@
 
 .nav-links2 a {
     display: block;
-    padding:25px 100px;
+    padding: 5px 10px;
     color: white;
     transition: background-color 0.3s;
 }
