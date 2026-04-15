@@ -2,37 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us - Green Star Pros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Green Star Pros</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header>
+    <div class="logo">Green Star Pros</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/contact-us">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>Get in touch for lawn care services</p>
+  </section>
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Reach Us</h2>
+      <p><strong>Phone:</strong> (740) 815-8664</p>
+      <p><strong>Location:</strong> Ohio</p>
+    </div>
+    <div class="contact-form">
+      <form action="#" method="POST">
 
-  <h1>Contact Us</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-  <p>Call us at (740) 815-8664</p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-  <form action="/submit" method="POST">
-    
-    <label>Name</label>
-    <input type="text" name="name" required>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
 
-    <label>Email</label>
-    <input type="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-    <label>Phone</label>
-    <input type="tel" name="phone">
+        <div class="checkbox">
+          <input type="checkbox" id="agree" required>
+          <label for="agree">
+            I agree to the terms & privacy policy
+          </label>
+        </div>
 
-    <label>Message</label>
-    <textarea name="message"></textarea>
+        <button type="submit">Send Message</button>
 
-    <label>
-      <input type="checkbox" required>
-      I agree to the terms
-    </label>
+      </form>
+    </div>
 
-    <button type="submit">Send Message</button>
-
-  </form>
+  </section>
+  <footer>
+    <p>© 2026 Green Star Pros</p>
+  </footer>
 
 </body>
 </html>
