@@ -1,11 +1,3 @@
-body{
-    background-color: #CCCCCC;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 14pt;
-}
-#logo{
-    height: 70px;
-}
 #soil {
     font-family: 'Georgia', serif; /* A classic, organic font */
     font-style: italic;
@@ -28,11 +20,12 @@ body{
     padding: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
 
+    /* Typography */
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 25px;
     line-height: 1.4;
     color: #225B33;
-    font-weight: 400;
+    
 }
 #spike-explain {
     /* Positioning and Size */
