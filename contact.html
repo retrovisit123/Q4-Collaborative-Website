@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenScape Solutions</title>
-    <link rel="stylesheet" href="scripts/menu.css">
-    <link rel="stylesheet" href="scripts/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Green Star Pros</title>
+  <link rel="stylesheet" href="scripts/menu.css">
+  <link rel="stylesheet" href="scripts/style.css">
 </head>
+
 <body>
-    <header class="navbar-container">
-        <nav class="navbar">
+
+  <!-- Header -->
+<header>
+    <nav class="navbar">
             
             <div class="navbar-brand">
                 <a href="index.html"><img id="logo" src="img/logo.png"></a> 
@@ -37,19 +40,70 @@
                 
                 <li><a href="#team">Team</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-        <footer class="navbar-container2">
-        <nav class="navbar">
-            <ul class="nav-links2">
-                <li><a href="index.html">1234 WashMyPants Rd. Detroit, MI 48201</a></li>
-                <li><a href="index.html">Phone: (1234)-123-4567</a></li>
-            </ul>   
-        </nav>
-    </footer>
+  </header>
 
-    <script src="scripts/script.js"></script>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’re here to help with your lawn care needs</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>Reach Us</h2>
+      <p><strong>Phone:</strong> (740) 815-8664</p>
+      <p><strong>Email:</strong> info@greenstarpros.com</p>
+      <p><strong>Location:</strong> Ohio</p>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form">
+      <form onsubmit="handleSubmit(event)">
+
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel">
+
+        <label>Message</label>
+        <textarea rows="5"></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <span>I agree to the terms & privacy policy</span>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <p id="success-msg"></p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Green Star Pros</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById("success-msg").innerText =
+        "✅ Message sent successfully!";
+    }
+  </script>
+
 </body>
 </html>
