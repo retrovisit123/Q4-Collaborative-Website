@@ -23,9 +23,9 @@
     /* Typography */
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 25px;
-    line-height: 1.4;
+    line-height: 1.8;
     color: #225B33;
-    
+    font-weight: 500;
 }
 #spike-explain {
     /* Positioning and Size */
