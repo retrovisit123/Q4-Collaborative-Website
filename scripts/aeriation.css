@@ -8,67 +8,122 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
 }
-#spike {
-    /* Positioning and Size */
-    max-width: 380px;
-    margin: 20px;
-
-    /* Box Styling */
-    background-color: #ffffff;     
-    border-left: 6px solid #4CAF50;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
-
-    /* Typography */
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    line-height: 1.8;
-    color: #225B33;
-    font-weight: 500;
+/* 2. Style for the individual "Column" */
+.service-box1 {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
 }
+
+/* 3. The Header (Matching your screenshot style) */
+#spike {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #225B33;
+    z-index: 2; /* Keeps it on top */
+}
+
+/* 4. The Content Box */
 #spike-explain {
-    /* Positioning and Size */
-    float: left;
-    max-width: 380px;
-    margin: 20px;
-    
-    /* Box Styling */
-    background-color: #ffffff;
-    border-left: 10px solid #4CAF50; /* A nice lawn-green accent */
-    border-radius: 12px;
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 0 0 12px 12px;
     padding: 25px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    
-    /* Typography */
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    margin-top: -5px; /* Pulls it up to meet the header */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
     line-height: 1.6;
     color: #333;
-    font-weight: 400; /* Removes the default heavy H4 thickness */
 }
 
+/* 5. Benefits Text */
 #spike-explain h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #2d5a27; /* Darker green for the sub-header */
-    font-size: 1.2rem;
+    color: #2d5a27;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
 }
 
 #spike-explain ul {
     padding-left: 20px;
-    margin: 0;
 }
 
-#spike-explain li {
-    margin-bottom: 10px;
-    list-style-type: disc;
-}
-
-/* Responsive adjustment for mobile screens */
-@media (max-width: 600px) {
-    #spike-explain {
+/* Mobile Friendly: Stacks the boxes on top of each other on small screens */
+@media (max-width: 800px) {
+    .aeration-card {
         float: none;
+        width: auto;
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+/* 1. This goes on the container that holds BOTH boxes (the grey area) */
+.parent-container { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px; /* Space between the two boxes */
+    padding: 20px;
+    flex-wrap: wrap; /* Keeps it from breaking on smaller screens */
+}
+
+/* 2. Style for the individual "Column" */
+.service-box2 {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. The Header (Matching your screenshot style) */
+#core {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #225B33;
+    z-index: 2; /* Keeps it on top */
+}
+
+/* 4. The Content Box */
+#core-explain {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 0 0 12px 12px;
+    padding: 25px;
+    margin-top: -5px; /* Pulls it up to meet the header */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 5. Benefits Text */
+#core-explain h3 {
+    color: #2d5a27;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+#core-explain ul {
+    padding-left: 20px;
+}
+
+/* Mobile Friendly: Stacks the boxes on top of each other on small screens */
+@media (max-width: 800px) {
+    .aeration-card {
+        float: none;
+        width: auto;
         max-width: 100%;
         margin: 10px;
     }
