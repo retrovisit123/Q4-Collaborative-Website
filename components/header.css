@@ -7,39 +7,25 @@
     text-decoration: none;
 }
 
-.footer {
-    background-color: #104249;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative; /* Needed for absolute positioning of the footer */
-}
-
 /* --- Navigation Container --- */
 .navbar-container {
     background-color: #104249;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-container2 {
-    background-color: #104249;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: auto;
-}
-
 .navbar {
     display: flex;
-    /* Main Flexbox setting: Icon (left) and Links (right) */
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the navbar content */
+    width: 100%;
+    margin: 0;
+    max-width: none;
 }
 
 /* --- Left Side: Brand/Icon --- */
 .navbar-brand a {
-    color: #1f5030; /* Gold color for the brand name */
+    color: #1f5030;
     font-size: 1.5em;
     font-weight: bold;
     padding: 15px 0;
@@ -49,13 +35,7 @@
 /* --- Right Side: Navigation Links (Desktop) --- */
 .nav-links {
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
-    align-items: center;
-}
-
-.nav-links2 {
-    display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -63,17 +43,9 @@
     position: relative;
 }
 
-
 .nav-links a {
     display: block;
     padding: 10px 25px;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.nav-links2 a {
-    display: block;
-    padding:25px 100px;
     color: white;
     transition: background-color 0.3s;
 }
@@ -126,35 +98,30 @@
     transition: all 0.3s ease-in-out;
 }
 
-
 /* ==================================== */
 /* --- Mobile/Tablet Responsiveness --- */
 /* ==================================== */
 @media (max-width: 768px) {
     
     .navbar {
-        flex-wrap: wrap; /* Allow the nav-links to drop below the brand/hamburger */
+        flex-wrap: wrap;
         padding: 0 20px;
     }
 
-    /* Show the hamburger icon */
     .hamburger {
         display: block; 
         padding: 15px 0;
     }
 
-    /* Navigation Links (Mobile) */
     .nav-links {
-        /* On mobile, the links take full width and stack vertically */
         flex-direction: column;
         width: 100%;
-        max-height: 0; /* Initially hidden */
+        max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
-        background-color: #333; 
+        background-color: #333;
         text-align: center;
-        /* Position links below the brand/hamburger by setting width to 100% */
-        order: 1; /* Force nav-links to the second row in the flex container */
+        order: 1;
     }
 
     .nav-links > li {
@@ -162,20 +129,17 @@
         border-top: 1px solid #555;
     }
     
-    /* Toggle menu open: Checkbox state controls visibility */
     #menu-toggle:checked ~ .nav-links {
-        max-height: 500px; /* Must be larger than total link height */
+        max-height: 500px;
     }
 
-    /* Mobile Dropdowns */
     .submenu {
-        position: static; /* Stack naturally below parent */
+        position: static;
         width: 100%;
-        display: none; /* Hide by default, show with JS 'active' class */
+        display: none;
         background-color: #555;
     }
 
-    /* JavaScript 'active' class for mobile submenu toggle */
     .dropdown.active .submenu {
         display: block;
     }
