@@ -128,3 +128,40 @@
         margin: 10px;
     }
 }
+/* Header Styling for Liquid */
+#liquid {
+    background: white;
+    border-left: 8px solid #00acc1; /* A nice "watery" teal color */
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #006064; /* Dark teal text */
+    z-index: 2;
+}
+
+/* Content Box Styling for Liquid */
+#liquid-explain {
+    background: white;
+    border-left: 8px solid #00acc1;
+    border-radius: 0 0 12px 12px;
+    padding: 25px;
+    margin-top: -5px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#liquid-explain h3 {
+    color: #00838f;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+#liquid-explain ul {
+    padding-left: 20px;
+}
