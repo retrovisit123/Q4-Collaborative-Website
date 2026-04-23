@@ -30,3 +30,9 @@
 
 >git pull origin <branch name>
 - Pulls all the changes from specified branch as long as its in the main repository
+
+>git branch "branchName"
+- Creates a branch with the name specified in quotation marks
+
+>git checkout "branchName"
+- Switches the branch that you are working on to a different branch with the name specified in quotation marks
