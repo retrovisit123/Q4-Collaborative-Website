@@ -72,14 +72,6 @@
     padding: 20px;
     flex-wrap: wrap; /* Keeps it from breaking on smaller screens */
 }
-
-/* 2. Style for the individual "Column" */
-.service-box2 {
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-}
-
 /* 3. The Header (Matching your screenshot style) */
 #core {
     background: white;
