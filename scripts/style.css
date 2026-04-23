@@ -6,8 +6,6 @@ body{
 #logo{
     height: 70px;
 }
-<<<<<<< HEAD
-=======
 .container{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -65,4 +63,3 @@ body{
 #about-us p {
     max-width: 95%;
 }
->>>>>>> 05d655943de0236cb4768ff0cac588a4821918bd
