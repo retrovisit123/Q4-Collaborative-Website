@@ -9,7 +9,7 @@
 .footer-container {
     display: flex;
     justify-content: center;
-    background-color: #183D21;
+    background-color: #DEE9C9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: auto;
 }
@@ -24,7 +24,8 @@
 }
 
 .footer-navbar span {
-    color: white;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-contact,
