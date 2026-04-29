@@ -141,5 +141,9 @@ font-size:2rem;
 .service-card{
 padding:20px;
 }
+}
 
+#picture{
+    width: 450px;
+    height: auto;
 }
