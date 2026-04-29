@@ -1,3 +1,8 @@
+:root {
+    --border-roundness: 4px;
+    --transition-time: 0.2s;
+}
+
 /* Base Reset and Styling */
 * {
     margin: 0;
@@ -9,7 +14,7 @@
 
 /* --- Navigation Container --- */
 .navbar-container {
-    background-color: #183D21;
+    background-color: #DEE9C9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -17,18 +22,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     width: 100%;
     margin: 0;
     max-width: none;
 }
 
-/* --- Left Side: Brand/Icon --- */
-.navbar-brand a {
-    color: #1f5030;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 15px 0;
+.navbar #logo {
+    height: 130px;       /* 👈 increase this (try 60–80px) */
+    width: auto;
     display: block;
 }
 
@@ -37,6 +39,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
 }
 
 .nav-links > li {
@@ -44,15 +47,32 @@
 }
 
 .nav-links a {
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     padding: 10px 25px;
-    color: white;
-    transition: background-color 0.3s;
+    font-size: 1.1em;
+    color: #1f5030;
+    transition: background-color var(--transition-time);
+    border-radius: var(--border-roundness);
 }
 
-.nav-links a:hover {
-    background-color: #b5d8cf;
-    color: #1f5030;
+.nav-links a:not(.quote a):hover {
+    background-color: #a2b67c;
+}
+
+.nav-links .quote {
+    background-color: green;
+    border-radius: var(--border-roundness);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-time) ease;
+}
+
+.nav-links .quote:hover {
+    transform: translateY(-4px);
+}
+
+.nav-links .quote a {
+    color: white;
 }
 
 /* --- Dropdown Styling (Desktop) --- */
@@ -60,11 +80,12 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #b5d8cf;
+    left: 0px;
+    background-color: #c8d8a8;
     min-width: 180px;
     z-index: 10;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-roundness);
 }
 
 .dropdown:hover .submenu {
@@ -73,10 +94,11 @@
 
 .submenu a {
     padding: 10px 20px;
+    border-radius: var(--border-roundness);
 }
 
 .submenu li:hover a {
-    background-color: #76c4e2;
+    background-color: #a2b67c;
 }
 
 /* --- Hamburger Icon (Hidden on Desktop) --- */
@@ -95,13 +117,13 @@
     height: 3px;
     margin: 5px 0;
     background-color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-time) ease-in-out;
 }
 
 /* ==================================== */
 /* --- Mobile/Tablet Responsiveness --- */
 /* ==================================== */
-@media (max-width: 768px) {
+@media (max-width: 1038px) {
     
     .navbar {
         flex-wrap: wrap;
@@ -113,12 +135,16 @@
         padding: 15px 0;
     }
 
+    .hamburger span {
+        background-color: #333;
+    }
+
     .nav-links {
         flex-direction: column;
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-out;
+        transition: max-height 0.25s ease-out;
         background-color: #333;
         text-align: center;
         order: 1;
@@ -126,9 +152,18 @@
 
     .nav-links > li {
         width: 100%;
-        border-top: 1px solid #555;
+        border-top: 1px solid #757575;
     }
-    
+
+    .nav-links a {
+        color: rgb(219, 218, 218)
+    }
+
+    .nav-links .quote {
+        background-color: #757575;
+        transform: translateY(-5px);
+    }
+
     #menu-toggle:checked ~ .nav-links {
         max-height: 500px;
     }
@@ -137,7 +172,7 @@
         position: static;
         width: 100%;
         display: none;
-        background-color: #555;
+        background-color: #757575;
     }
 
     .dropdown.active .submenu {
