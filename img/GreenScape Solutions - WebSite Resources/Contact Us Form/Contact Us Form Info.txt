@@ -1,0 +1,18 @@
+The form should collect the following information:
+
+Name
+
+Address/City/State/Zip
+
+Email Address
+
+Phone Number
+
+Tell Us What You Would Like Us To Do(TextArea)
+
+
+
+
+The form will collect the info above and email it to us.
+
+
