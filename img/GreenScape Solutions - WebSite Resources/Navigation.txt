@@ -1,0 +1,18 @@
+Navigation should be persistent and stay located at the top of each page. 
+
+Navigation tree should look like this:
+
+Home/Landing Page
+
+Services(Service Areas)
+  Aeration & Seeding
+  Landscape Maintenance
+  Treatments
+
+Reviews
+
+Team
+
+
+Contact Us
+   
