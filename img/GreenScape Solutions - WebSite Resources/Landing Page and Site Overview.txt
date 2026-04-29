@@ -1,0 +1,20 @@
+Landing page should have navigation bar at the top.
+NOTE: Responsive navigation bar will be provided.
+
+Logo should be placed somewhere in the navigation bar.
+
+
+Introduction image and message should be formatted and place below the navigation bar. Image and text can be found in these files:
+
+GreenScape Solutions Introduction Image.jpg
+GreenScape Solutions - Introduction Message.txt
+
+
+Footer should be located at the bottom of the page. Look in Footer directory for details.
+
+Information on other pages that need to be created can be found in the following directories:
+
+-Service Areas
+-Reviews
+-Team
+-Contact Us Form
