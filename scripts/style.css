@@ -55,36 +55,3 @@ body{
     order: 1;
 }
 
-<<<<<<< HEAD
-=======
-#intro-section {
-    display: flex;
-    align-items: flex-start; /* aligns top edges */
-    gap: 20px; /* space between image and text */
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-#intro-img {
-    display: block;
-    margin-right: auto;
-    width: 300%;
-    height: 300%;
-    object-fit: fill;
-}
-
-#about-us {
-    display: block;
-    margin-top: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#about-us h2 {
-    color: #255c32;
-}
-
-#about-us p {
-    max-width: 95%;
-}
-
->>>>>>> main
