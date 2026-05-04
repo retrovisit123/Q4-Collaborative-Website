@@ -1,0 +1,159 @@
+#soil {
+    font-family: 'Georgia', serif; /* A classic, organic font */
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    color: #E0EAC9;
+    -webkit-text-stroke: 1px #4B3621;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+/* 2. Style for the individual "Column" */
+.service-box1 {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. The Header (Matching your screenshot style) */
+#spike {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #225B33;
+    z-index: 2; /* Keeps it on top */
+}
+
+/* 4. The Content Box */
+#spike-explain {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 0 0 12px 12px;
+    padding: 25px;
+    margin-top: -5px; /* Pulls it up to meet the header */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 5. Benefits Text */
+#spike-explain h3 {
+    color: #2d5a27;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+#spike-explain ul {
+    padding-left: 20px;
+}
+
+/* Mobile Friendly: Stacks the boxes on top of each other on small screens */
+@media (max-width: 800px) {
+    .aeration-card {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+/* 1. This goes on the container that holds BOTH boxes (the grey area) */
+.parent-container { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px; /* Space between the two boxes */
+    padding: 20px;
+    flex-wrap: wrap; /* Keeps it from breaking on smaller screens */
+}
+/* 3. The Header (Matching your screenshot style) */
+#core {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #225B33;
+    z-index: 2; /* Keeps it on top */
+}
+
+/* 4. The Content Box */
+#core-explain {
+    background: white;
+    border-left: 8px solid #4CAF50;
+    border-radius: 0 0 12px 12px;
+    padding: 25px;
+    margin-top: -5px; /* Pulls it up to meet the header */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 5. Benefits Text */
+#core-explain h3 {
+    color: #2d5a27;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+#core-explain ul {
+    padding-left: 20px;
+}
+
+/* Mobile Friendly: Stacks the boxes on top of each other on small screens */
+@media (max-width: 800px) {
+    .aeration-card {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+/* Header Styling for Liquid */
+#liquid {
+    background: white;
+    border-left: 8px solid #00acc1; /* A nice "watery" teal color */
+    border-radius: 12px 12px 0 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #006064; /* Dark teal text */
+    z-index: 2;
+}
+
+/* Content Box Styling for Liquid */
+#liquid-explain {
+    background: white;
+    border-left: 8px solid #00acc1;
+    border-radius: 0 0 12px 12px;
+    padding: 25px;
+    margin-top: -5px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#liquid-explain h3 {
+    color: #00838f;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+#liquid-explain ul {
+    padding-left: 20px;
+}
