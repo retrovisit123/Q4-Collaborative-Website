@@ -1,4 +1,7 @@
 /* Treatments Page Only */
+body{
+  background-color: #E1F3E5;
+}
 
 .treatments-page{
 max-width:1000px;
