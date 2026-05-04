@@ -157,3 +157,17 @@
 #liquid-explain ul {
     padding-left: 20px;
 }
+
+.service-img {
+    object-fit: cover; /* keeps it clean, no stretching */
+    border-radius: 12px 12px 0 0;
+    margin-bottom: -5px; /* connects nicely to box */
+     border-left: 8px solid #00acc1; /* A nice "watery" teal color */
+}
+
+.service-img {
+    object-fit: cover; /* keeps it clean, no stretching */
+    border-radius: 12px 12px 0 0;
+    margin-bottom: -5px; /* connects nicely to box */
+     border-left: 8px solid #00acc1; /* A nice "watery" teal color */
+}
