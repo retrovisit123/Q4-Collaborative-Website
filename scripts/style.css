@@ -1,149 +1,198 @@
+/* Global styles */
 body {
   background-color: #e1f3e5;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14pt;
-}
-#logo {
-  height: 70px;
-}
-
-.box {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 30px;
-  font-size: 25px;
-  background-color: #e1f3e5;
-}
-
-.containerC {
-  display: flex;
-  flex-direction: column;
-}
-
-.containerR {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-}
-
-#section {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: column;
-  padding: 10px;
-  max-width: fit-content;
-  margin: 0 auto;
-}
-#weed {
-  display: flex;
-  max-width: 350px;
-  justify-content: flex-end;
-  align-items: center;
-  order: 2;
-}
-#fertilizer {
-  display: flex;
-  max-width: 350px;
-  order: 0;
-}
-#lawn {
-  display: flex;
-  max-width: 350px;
-  order: 1;
-}
-
-#intro-section {
-  display: flex;
-  align-items: flex-start; /* aligns top edges */
-  gap: 20px; /* space between image and text */
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-#intro-img {
-  display: block;
-  margin-right: auto;
-  width: 300%;
-  height: 300%;
-  object-fit: fill;
-}
-
-#about-us {
-  display: block;
-  margin-top: 10%;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Intro banner */
+.introbanner {
+  display: block;
+  margin: 1rem auto;
+  border: 6px solid #1f5030;
+  border-radius: 1.5rem;
+  width: 95%;
+  max-width: 1400px;
+  height: auto;
+}
+
+/* About section */
+#about-us {
+  text-align: center;
+  margin: 2rem auto;
+  border: 4px solid #1f5030;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 1000px;
+  padding: 1.5rem;
+  background-color: #dee9c9;
 }
 
 #about-us h2 {
-  color: #255c32;
+  color: #1f5030;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
 }
 
 #about-us p {
-  max-width: 95%;
-}
-
-/* Treatments Page Only */
-
-.treatments-page {
-  max-width: 1000px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  max-width: 900px;
   margin: auto;
-  padding: 30px 20px;
 }
 
-.page-title {
+/* Section labels */
+.label {
+  border-bottom: solid 4px #1f5030;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #2e6b3a;
 }
 
+.label p {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  color: #1f5030;
+  margin: 0.5rem 0;
+}
+
+/* Cards container */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Service cards */
 .service-card {
-  background: white;
-  padding: 30px;
-  margin-bottom: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.service-img {
-  display: block;
+  background-color: #dee9c9; /* requested green */
+  border-radius: 15px;
+  border: 4px solid #1f5030;
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto 25px;
-  border-radius: 10px;
+  max-width: 300px; /* smaller cards */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.service-card h2 {
-  color: #2e6b3a;
-  margin-bottom: 15px;
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.service-card h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #4c8c4a;
+/* Card title */
+.service-card > p {
+  border-bottom: solid 3px #1f5030;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1f5030;
+  margin: 0;
+  padding: 1rem;
 }
 
-.service-card p {
+/* Card content */
+.service-desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-desc img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-desc p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
 }
 
-/* Mobile */
+/* Remove default link styling */
+.team-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tablet responsiveness */
 @media (max-width: 768px) {
-  .page-title {
-    font-size: 2rem;
+  .team-container {
+    gap: 18px;
+    padding: 15px;
   }
 
   .service-card {
-    padding: 20px;
+    max-width: 90%;
+  }
+
+  .service-desc img {
+    height: 160px;
+  }
+
+  .service-card > p {
+    font-size: 1.2rem;
+  }
+
+  .service-desc p {
+    font-size: 0.95rem;
   }
 }
 
-#picture {
-  width: 450px;
-  height: auto;
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  body {
+    font-size: 12pt;
+  }
+
+  .introbanner {
+    width: 95%;
+    border-width: 4px;
+    border-radius: 1rem;
+  }
+
+  #about-us {
+    width: 92%;
+    padding: 1rem;
+  }
+
+  .label {
+    width: 92%;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  .service-desc img {
+    height: 140px;
+  }
+
+  .service-card > p {
+    font-size: 1.1rem;
+  }
+
+  .service-desc p {
+    font-size: 0.9rem;
+    padding: 0.9rem;
+  }
 }
