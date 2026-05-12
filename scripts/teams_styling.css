@@ -31,20 +31,22 @@ body {
 .titlecard {
     border: solid 4px #333;
     border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
 
     .employee-info {
         text-align: center;
         font-size: 2rem;
-        width: 98%;
-        margin-left: 1%;
+        margin: 10px;
     }
 
     >img {
         width: 100%;
         height: auto;
-        border-bottom: #333 solid 4px;
-        border-top: #333 solid 4px;
-
+        max-height: 300px;
+        border: #333 solid 4px;
+        border-radius: 15px;
     }
 }
 
