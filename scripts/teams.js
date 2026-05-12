@@ -28,8 +28,6 @@ const memberName = document.getElementById("member-name");
 const memberDesc = document.getElementById("member-desc");
 const memberImage = document.getElementById("member-image");
 
-memberSection.style.display = "none";
-
 // Add click event to each card
 cards.forEach((card) => {
   card.style.cursor = "pointer";
