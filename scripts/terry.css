@@ -3,15 +3,6 @@ body {
   background-color: #E1F3E5;
 }
 
-/*this is for the services page only*/
-.services-card {
-  background: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
-}
-
 .landscaping-page {
   max-width: 1000px;
   margin: auto;
